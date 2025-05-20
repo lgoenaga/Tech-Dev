@@ -38,6 +38,14 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 ```
 
+### Pasos
+
+1. Agrega el siguiente script de Tailwind CSS dentro de la etiqueta `<head>` de los archivos `footer.html`, `navbar.html` e `index.html`:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
 ## Créditos
 
 Desarrollado para el curso de Introducción a la Programación - CESDE.
