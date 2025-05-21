@@ -20,7 +20,7 @@ html {
 }
 
 /* Footer styles */
- {
-  color: #60a5fa;.ul-hover-parent > li a:hover
+.ul-hover-parent > li a:hover
+ {color: #60a5fa;
   text-decoration: underline;
 }
