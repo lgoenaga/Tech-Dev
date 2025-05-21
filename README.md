@@ -43,45 +43,50 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
 1. Agrega el siguiente script de Tailwind CSS dentro de la etiqueta `<head>` de los archivos `footer.html`, `navbar.html` e `index.html`:
 
    ```html
-   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
    ```
 
 2. Ajuste del Nav:
 
-   - Ajusta la etiqueta `<nav>` con la clase `bg-gray-800 text-white p-4`.
-     - `bg-gray-800`: Fondo gris oscuro para el navbar.
-     - `text-white`: Texto en color blanco para mejor contraste.
-     - `p-4`: Espaciado interno (padding) uniforme.
+   - **Etiqueta `<nav>`** 
+     - `class="bg-gray-800 text-white p-4"`.
+       - `bg-gray-800`: Fondo gris oscuro para el navbar.
+       - `text-white`: Texto en color blanco para mejor contraste.
+       - `p-4`: Espaciado interno (padding) uniforme.
 
-   - Ajusta el `<div>` principal dentro del navbar con la clase `container mx-auto flex justify-between`.
-     - `container`: Limita el ancho y centra el contenido.
-     - `mx-auto`: Centra horizontalmente el contenedor.
-     - `flex`: Usa Flexbox para organizar los elementos.
-     - `justify-between`: Espacia los elementos al máximo entre sí.
+   - **Etiqueta `<div>`** Agrupa contenido dentro del navbar
+     - `class="container mx-auto flex justify-between"`.
+       - `container`: Limita el ancho y centra el contenido.
+       - `mx-auto`: Centra horizontalmente el contenedor.
+       - `flex`: Usa Flexbox para organizar los elementos.
+       - `justify-between`: Espacia los elementos al máximo entre sí.
 
-   - Ajusta el enlace principal (`<a>`) con la clase `text-2xl font-bold`.
-     - `text-2xl`: Tamaño de fuente grande para destacar el nombre.
-     - `font-bold`: Texto en negrita para mayor énfasis.
+   - **Etiqueta (`<a>`)** Brand
+     - `class="text-2xl font-bold"`.
+       - `text-2xl`: Tamaño de fuente grande para destacar el nombre.
+       - `font-bold`: Texto en negrita para mayor énfasis.
 
-   - Ajusta el `<div>` que agrupa los enlaces de navegación con la clase `hidden space-x-6 md:flex div-hover-parent`.
-     - `hidden`: Oculta el div en pantallas pequeñas.
-     - `md:flex`: Muestra el div como flex a partir de pantallas medianas.
-     - `space-x-6`: Espaciado horizontal entre los enlaces.
-     - `div-hover-parent`: Clase personalizada para efectos adicionales.
+   - **Etiqueta `<div>`** Agrupa los enlaces de navegación
+     - `class="hidden space-x-6 md:flex div-hover-parent"`.
+       - `hidden`: Oculta el div en pantallas pequeñas.
+       - `md:flex`: Muestra el div como flex a partir de pantallas medianas.
+       - `space-x-6`: Espaciado horizontal entre los enlaces.
+       - `div-hover-parent`: Clase personalizada para efectos adicionales.
 
-   - Ajusta el botón para el menú hamburguesa con la clase `md:hidden`.
-     - `md:hidden`: El botón solo se muestra en pantallas pequeñas, permitiendo navegación responsive.
+   - **Etiqueta `button`** Ajusta el botón para el menú hamburguesa
+     - `class="md:hidden"`.
+       - `md:hidden`: El botón solo se muestra en pantallas pequeñas, permitiendo navegación responsive.
 
 3. Ajuste del Footer:
 
-   - Etiqueta `<footer>`  
+   - **Etiqueta `<footer>`**  
      - `class="bg-gray-800 text-white py-4 md:py-8"`
        - `bg-gray-800`: Fondo gris oscuro para coherencia visual.
        - `text-white`: Texto en color blanco para contraste.
        - `py-4`: Padding vertical pequeño en pantallas pequeñas.
        - `md:py-8`: Padding vertical mayor en pantallas medianas o grandes.
 
-   - `<div>` que encierra todo el contenido del footer  
+   - **Etiqueta `<div>`** Encierra todo el contenido del footer  
      - `class="container mx-auto items-center flex flex-col mb-4 gap-4 text-xs md:flex-row md:items-start md:justify-between md:gap-0 sm:text-sm md:text-base lg:text-lg"`
        - `container`: Centra y limita el ancho del contenido.
        - `mx-auto`: Centra horizontalmente el contenedor.
@@ -97,14 +102,14 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
        - `md:gap-0`: Elimina el gap en pantallas medianas.
        - `sm:text-sm md:text-base lg:text-lg`: Tamaño de texto adaptable según el tamaño de pantalla.
 
-   - Divs de Tech&Dev, Enlaces y Contacto  
+   - **Etiquetas `div` de**: Tech&Dev, Enlaces y Contacto  
      - `class="text-center px-2 md:text-left md:px-4"`
        - `text-center`: Centra el texto en pantallas pequeñas.
        - `px-2`: Padding horizontal pequeño.
        - `md:text-left`: Alinea el texto a la izquierda en pantallas medianas.
        - `md:px-4`: Padding horizontal mayor en pantallas medianas.
 
-   - `<h3>` de Tech&Dev  
+   - **Etiqueta `<h3>` de Tech&Dev**  
      - `class="text-lg font-extrabold text-blue-400 mb-1 md:text-xl lg:text-2xl"`
        - `text-lg`: Texto grande por defecto.
        - `font-extrabold`: Fuente extra negrita.
@@ -113,12 +118,12 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
        - `md:text-xl`: Texto más grande en pantallas medianas.
        - `lg:text-2xl`: Texto aún más grande en pantallas grandes.
 
-   - `<p>` de Tech&Dev y Contacto  
+   - **Etiqueta `<p>` de Tech&Dev y Contacto**
      - `class="text-gray-300 mb-1"`
        - `text-gray-300`: Texto gris claro para menor jerarquía.
        - `mb-1`: Margen inferior pequeño.
 
-   - `<h4>` de Enlaces y Contacto  
+   - **Etiqueta `<h4>` de Enlaces y Contacto**  
      - `class="text-sm font-bold text-blue-300 mb-2 md:text-base lg:text-lg"`
        - `text-sm`: Texto pequeño por defecto.
        - `font-bold`: Fuente en negrita.
@@ -127,13 +132,13 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
        - `md:text-base`: Texto más grande en pantallas medianas.
        - `lg:text-lg`: Texto aún más grande en pantallas grandes.
 
-   - `<ul>` de Enlaces  
+   - **Etiqueta `<ul>` de Enlaces**  
      - `class="space-y-1 md:space-y-2 ul-hover-parent"`
        - `space-y-1`: Espaciado vertical pequeño entre elementos de lista.
        - `md:space-y-2`: Espaciado mayor en pantallas medianas.
        - `ul-hover-parent`: Clase personalizada para efectos de hover.
 
-   - Div del copyright  
+   - **Etiqueta `div` del copyright**  
      - `class="text-center border-t border-gray-700 text-gray-400 text-xs pt-1 sm:pt-2 md:pt-6"`
        - `text-center`: Centra el texto.
        - `border-t`: Borde superior para separar visualmente.
@@ -216,6 +221,53 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
        - `color: #60a5fa`: Cambia el color del enlace al pasar el mouse (azul Tailwind).
        - `text-decoration: underline`: Subraya el enlace al pasar el mouse.
 
+6. Adición de las Páginas de Productos, Carrito y Contacto
+
+   - **products.html:**  
+     - Copia la estructura de `index.html` pero elimina la sección 2 del `<main>`.
+     - Renombra el archivo como `products.html`.
+     - Cambia el `<title>` en el `<head>` a "Tech & Dev - Productos".
+     - En el `<main>`, cambia el `<h1>` a "Nuestros Productos".
+     - Agrega una lista:
+       - `<ul class="flex justify-center gap-4 text-base text-gray-600 md:text-lg lg:text-xl ul-hover-parent">`
+         - `<li>Computadoras</li>`
+         - `<li>Accesorios</li>`
+         - `<li>Periféricos</li>`
+
+   - **cart.html:**  
+     - Copia la estructura de `index.html` pero elimina la sección 2 del `<main>`.
+     - Renombra el archivo como `cart.html`.
+     - Cambia el `<title>` en el `<head>` a "Tech & Dev - Carrito".
+     - En el `<main>`, cambia el `<h1>` a "Tu Carrito de Compras".
+     - Elimina la etiqueta `<p>` de la sección principal.
+
+   - **contact.html:**  
+     - Copia la estructura de `index.html` pero elimina la sección 2 del `<main>`.
+     - Renombra el archivo como `contact.html`.
+     - Cambia el `<title>` en el `<head>` a "Tech & Dev - Contacto".
+     - En el `<main>`, cambia el `<h1>` a "Contacto".
+     - Elimina la etiqueta `<p>` de la sección principal.
+
+   - **Verifica los enlaces de navegación** en todas las páginas para asegurar que apunten correctamente a `index.html`, `products.html`, `cart.html` y `contact.html`.
+
+   - **Resumen de cambios en el `<main>` de cada página:**
+     - **products.html:**  
+       ```html
+       <h1 class="...">Nuestros Productos</h1>
+       <ul class="flex justify-center gap-4 text-base text-gray-600 md:text-lg lg:text-xl ul-hover-parent">
+         <li>Computadoras</li>
+         <li>Accesorios</li>
+         <li>Periféricos</li>
+       </ul>
+       ```
+     - **cart.html:**  
+       ```html
+       <h1 class="...">Tu Carrito de Compras</h1>
+       ```
+     - **contact.html:**  
+       ```html
+       <h1 class="...">Contacto</h1>
+       ```
 ---
 
 ## Créditos
