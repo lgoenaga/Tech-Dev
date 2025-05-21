@@ -46,42 +46,108 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
    <script src="https://cdn.tailwindcss.com"></script>
    ```
 
-2. Ajusta la etiqueta `<nav>` con la clase `bg-gray-800 text-white p-4`.
-   - **Opciones**  
+2. Ajuste del Nav:
+
+   - Ajusta la etiqueta `<nav>` con la clase `bg-gray-800 text-white p-4`.
      - `bg-gray-800`: Fondo gris oscuro para el navbar.
      - `text-white`: Texto en color blanco para mejor contraste.
      - `p-4`: Espaciado interno (padding) uniforme.
 
-3. Ajusta el `<div>` principal dentro del navbar con la clase `container mx-auto flex justify-between`.
-   - **Opciones**  
+   - Ajusta el `<div>` principal dentro del navbar con la clase `container mx-auto flex justify-between`.
      - `container`: Limita el ancho y centra el contenido.
      - `mx-auto`: Centra horizontalmente el contenedor.
      - `flex`: Usa Flexbox para organizar los elementos.
      - `justify-between`: Espacia los elementos al máximo entre sí.
 
-4. Ajusta el enlace principal (`<a>`) con la clase `text-2xl font-bold`.
-   - **Opciones**  
+   - Ajusta el enlace principal (`<a>`) con la clase `text-2xl font-bold`.
      - `text-2xl`: Tamaño de fuente grande para destacar el nombre.
      - `font-bold`: Texto en negrita para mayor énfasis.
 
-5. Ajusta el `<div>` que agrupa los enlaces de navegación con la clase `hidden space-x-6 md:flex div-hover-parent`.
-   - **Opciones**  
+   - Ajusta el `<div>` que agrupa los enlaces de navegación con la clase `hidden space-x-6 md:flex div-hover-parent`.
      - `hidden`: Oculta el div en pantallas pequeñas.
      - `md:flex`: Muestra el div como flex a partir de pantallas medianas.
      - `space-x-6`: Espaciado horizontal entre los enlaces.
      - `div-hover-parent`: Clase personalizada para efectos adicionales.
 
-6. Ajusta el botón para el menú hamburguesa con la clase `md:hidden`.
-   - **Opciones**  
+   - Ajusta el botón para el menú hamburguesa con la clase `md:hidden`.
      - `md:hidden`: El botón solo se muestra en pantallas pequeñas, permitiendo navegación responsive.
 
----
+3. Ajuste del Footer:
 
-Esto ajusta el navbar para que sea visualmente atractivo, funcional y adaptable a diferentes tamaños de pantalla usando utilidades de Tailwind CSS.
+   - Etiqueta `<footer>`  
+     - `class="bg-gray-800 text-white py-4 md:py-8"`
+       - `bg-gray-800`: Fondo gris oscuro para coherencia visual.
+       - `text-white`: Texto en color blanco para contraste.
+       - `py-4`: Padding vertical pequeño en pantallas pequeñas.
+       - `md:py-8`: Padding vertical mayor en pantallas medianas o grandes.
+
+   - `<div>` que encierra todo el contenido del footer  
+     - `class="container mx-auto items-center flex flex-col mb-4 gap-4 text-xs md:flex-row md:items-start md:justify-between md:gap-0 sm:text-sm md:text-base lg:text-lg"`
+       - `container`: Centra y limita el ancho del contenido.
+       - `mx-auto`: Centra horizontalmente el contenedor.
+       - `items-center`: Centra los elementos en el eje transversal (vertical en mobile).
+       - `flex`: Usa Flexbox para organizar los elementos.
+       - `flex-col`: Coloca los elementos en columna en pantallas pequeñas.
+       - `mb-4`: Margen inferior para separar del copyright.
+       - `gap-4`: Espaciado entre los elementos en mobile.
+       - `text-xs`: Texto pequeño por defecto.
+       - `md:flex-row`: En pantallas medianas, los elementos se disponen en fila.
+       - `md:items-start`: Alinea los elementos arriba en pantallas medianas.
+       - `md:justify-between`: Espacia los elementos al máximo en horizontal en pantallas medianas.
+       - `md:gap-0`: Elimina el gap en pantallas medianas.
+       - `sm:text-sm md:text-base lg:text-lg`: Tamaño de texto adaptable según el tamaño de pantalla.
+
+   - Divs de Tech&Dev, Enlaces y Contacto  
+     - `class="text-center px-2 md:text-left md:px-4"`
+       - `text-center`: Centra el texto en pantallas pequeñas.
+       - `px-2`: Padding horizontal pequeño.
+       - `md:text-left`: Alinea el texto a la izquierda en pantallas medianas.
+       - `md:px-4`: Padding horizontal mayor en pantallas medianas.
+
+   - `<h3>` de Tech&Dev  
+     - `class="text-lg font-extrabold text-blue-400 mb-1 md:text-xl lg:text-2xl"`
+       - `text-lg`: Texto grande por defecto.
+       - `font-extrabold`: Fuente extra negrita.
+       - `text-blue-400`: Color azul claro para destacar.
+       - `mb-1`: Margen inferior pequeño.
+       - `md:text-xl`: Texto más grande en pantallas medianas.
+       - `lg:text-2xl`: Texto aún más grande en pantallas grandes.
+
+   - `<p>` de Tech&Dev y Contacto  
+     - `class="text-gray-300 mb-1"`
+       - `text-gray-300`: Texto gris claro para menor jerarquía.
+       - `mb-1`: Margen inferior pequeño.
+
+   - `<h4>` de Enlaces y Contacto  
+     - `class="text-sm font-bold text-blue-300 mb-2 md:text-base lg:text-lg"`
+       - `text-sm`: Texto pequeño por defecto.
+       - `font-bold`: Fuente en negrita.
+       - `text-blue-300`: Color azul claro.
+       - `mb-2`: Margen inferior.
+       - `md:text-base`: Texto más grande en pantallas medianas.
+       - `lg:text-lg`: Texto aún más grande en pantallas grandes.
+
+   - `<ul>` de Enlaces  
+     - `class="space-y-1 md:space-y-2 ul-hover-parent"`
+       - `space-y-1`: Espaciado vertical pequeño entre elementos de lista.
+       - `md:space-y-2`: Espaciado mayor en pantallas medianas.
+       - `ul-hover-parent`: Clase personalizada para efectos de hover.
+
+   - Div del copyright  
+     - `class="text-center border-t border-gray-700 text-gray-400 text-xs pt-1 sm:pt-2 md:pt-6"`
+       - `text-center`: Centra el texto.
+       - `border-t`: Borde superior para separar visualmente.
+       - `border-gray-700`: Color del borde.
+       - `text-gray-400`: Texto gris claro.
+       - `text-xs`: Texto muy pequeño.
+       - `pt-1`: Padding superior pequeño.
+       - `sm:pt-2`: Padding superior mayor en pantallas pequeñas.
+       - `md:pt-6`: Padding superior aún mayor en pantallas medianas.
+
+---
 
 ## Créditos
 
 Desarrollado para el curso de Introducción a la Programación - CESDE.
 
 ---
-¡Personaliza este archivo con más información a medida que avances en el proyecto!
