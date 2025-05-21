@@ -144,6 +144,78 @@ Si deseas experimentar con Tailwind CSS en este proyecto, puedes agregar la sigu
        - `sm:pt-2`: Padding superior mayor en pantallas pequeñas.
        - `md:pt-6`: Padding superior aún mayor en pantallas medianas.
 
+4. Ajuste del Index:
+
+   - **Etiqueta `<body>`**
+     - `class="flex flex-col min-h-screen bg-gray-100"`
+       - `flex flex-col`: Usa Flexbox y organiza el contenido en columna.
+       - `min-h-screen`: El contenido ocupa al menos el alto de la pantalla.
+       - `bg-gray-100`: Fondo gris claro para toda la página.
+
+   - **Etiqueta `<header>`**
+     - `class="mb-2"`
+       - `mb-2`: Margen inferior para separar el header del contenido principal.
+
+   - **Etiqueta `<iframe>` (navbar)**
+     - `class="w-full h-20 border-none"`
+       - `w-full`: El iframe ocupa todo el ancho disponible.
+       - `h-20`: Altura fija de 5rem (20 * 0.25rem).
+       - `border-none`: Sin borde.
+
+   - **Etiqueta `<main>`**
+     - `class="flex-1 flex flex-col px-4 py-2"`
+       - `flex-1`: El main ocupa el espacio restante vertical.
+       - `flex flex-col`: Organiza el contenido en columna.
+       - `px-4 py-2`: Padding horizontal y vertical.
+
+   - **Primera sección del main**
+     - `class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4"`
+       - `flex flex-col`: Organiza el contenido en columna.
+       - `items-center justify-center`: Centra el contenido horizontal y verticalmente.
+       - `bg-white`: Fondo blanco.
+       - `rounded-lg`: Bordes redondeados.
+       - `shadow`: Sombra para dar profundidad.
+       - `p-4`: Padding interno.
+       - `mb-4`: Margen inferior.
+
+   - **Etiqueta `<h1>` de la sección 1**
+     - `class="text-center text-3xl font-bold text-blue-700 py-2 md:text-4xl lg:text-5xl"`
+       - `text-center`: Centra el texto.
+       - `text-3xl`: Tamaño grande de fuente.
+       - `font-bold`: Texto en negrita.
+       - `text-blue-700`: Color azul intenso.
+       - `py-2`: Padding vertical.
+       - `md:text-4xl lg:text-5xl`: Tamaño de fuente adaptable en pantallas medianas y grandes.
+
+   - **Etiqueta `<p>` de la sección 1**
+     - `class="text-center text-base text-gray-600 md:text-lg lg:text-xl"`
+       - `text-center`: Centra el texto.
+       - `text-base`: Tamaño base de fuente.
+       - `text-gray-600`: Texto gris oscuro.
+       - `md:text-lg lg:text-xl`: Tamaño de fuente adaptable.
+
+   ---
+   **Pendiente Sección 2**
+   ---
+
+   - **Etiqueta `<iframe>` del footer**
+     - `class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"`
+       - `w-full`: Ocupa todo el ancho.
+       - `min-h-[18rem]`: Altura mínima de 18rem.
+       - `sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem]`: Altura mínima adaptable según el tamaño de pantalla.
+       - `border-none`: Sin borde.
+
+5. Ajuste de Styles para el Hover del Footer y el Navbar
+
+   - **Header**
+     - `.div-hover-parent > a:hover`
+       - `color: #60a5fa`: Cambia el color del enlace al pasar el mouse (azul Tailwind).
+
+   - **Footer**
+     - `.ul-hover-parent > li a:hover`
+       - `color: #60a5fa`: Cambia el color del enlace al pasar el mouse (azul Tailwind).
+       - `text-decoration: underline`: Subraya el enlace al pasar el mouse.
+
 ---
 
 ## Créditos

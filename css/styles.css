@@ -13,3 +13,14 @@ html {
 	margin: 0;
 	padding: 0;
 }
+
+/* Header styles */
+.div-hover-parent > a:hover {
+  color: #60a5fa;
+}
+
+/* Footer styles */
+ {
+  color: #60a5fa;.ul-hover-parent > li a:hover
+  text-decoration: underline;
+}
