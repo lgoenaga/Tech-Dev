@@ -13,12 +13,17 @@
 				src="components/navbar.html"
 				class="w-full h-20 border-none"
 				frameborder="0"
-				scrolling="no">
+				scrolling="no"
+			>
 			</iframe>
 		</header>
 		<main class="flex-1 flex flex-col px-4 py-2">
-			<section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4">
-				<h1 class="text-center text-3xl font-bold text-blue-700 py-2 md:text-4xl lg:text-5xl">
+			<section
+				class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4"
+			>
+				<h1
+					class="text-center text-3xl font-bold text-blue-700 py-2 md:text-4xl lg:text-5xl"
+				>
 					Bienvenido a Tecnología y Desarrollo
 				</h1>
 				<p class="text-center text-base text-gray-600 md:text-lg lg:text-xl">
@@ -27,42 +32,55 @@
 				</p>
 			</section>
 			<section>
-				<h2>
-					Nuestras Categorías
-				</h2>
-				<div>
+				<h2 class="text-3xl font-bold mb-8 text-center">Nuestras Categorías</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<!-- Computadoras -->
-					<a href="products.html#computers">
+					<a
+						href="products.html#computers"
+						class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl"
+					>
 						<img
 							src="images/banners/computers.jpg"
-							alt="Computadoras"/>
-						<div>
-							<h3>Computadoras</h3>
-							<p>
+							alt="Computadoras"
+							class="w-full h-48 object-cover"
+						/>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Computadoras</h3>
+							<p class="text-gray-600">
 								Los mejores equipos para trabajo y gaming
 							</p>
 						</div>
 					</a>
+
 					<!-- Accesorios -->
 					<a
-						href="products.html#accessories">
+						href="products.html#accessories"
+						class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl"
+					>
 						<img
 							src="images/banners/accessories.jpg"
-							alt="Accesorios"/>
-						<div>
-							<h3>Accesorios</h3>
-							<p>Complementos para tu setup ideal</p>
+							alt="Accesorios"
+							class="w-full h-48 object-cover"
+						/>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Accesorios</h3>
+							<p class="text-gray-600">Complementos para tu setup ideal</p>
 						</div>
 					</a>
+
 					<!-- Periféricos -->
 					<a
-						href="products.html#peripherals">
+						href="products.html#peripherals"
+						class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl"
+					>
 						<img
 							src="images/banners/peripherals.jpg"
-							alt="Periféricos"/>
-						<div>
-							<h3>Periféricos</h3>
-							<p>Mejora tu experiencia de usuario</p>
+							alt="Periféricos"
+							class="w-full h-48 object-cover"
+						/>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Periféricos</h3>
+							<p class="text-gray-600">Mejora tu experiencia de usuario</p>
 						</div>
 					</a>
 				</div>
@@ -73,7 +91,8 @@
 				src="components/footer.html"
 				class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"
 				frameborder="0"
-				scrolling="no">
+				scrolling="no"
+			>
 			</iframe>
 		</footer>
 	</body>
